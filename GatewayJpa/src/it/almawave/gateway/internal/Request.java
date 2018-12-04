@@ -18,6 +18,7 @@ public class Request implements Serializable {
 	private Integer ID;
 
 	private String EXT_ID;
+	private Long AUDIOMA_ID;
 	private Integer NODE_ID;
 	private String  FILE_URI;
 	private String  TIPO_VISITA;
@@ -112,6 +113,12 @@ public class Request implements Serializable {
 	}
 	public void setEXT_ID(String eXT_ID) {
 		EXT_ID = eXT_ID;
+	}
+	public Long getAUDIOMA_ID() {
+		return AUDIOMA_ID;
+	}
+	public void setAUDIOMA_ID(Long aUDIOMA_ID) {
+		AUDIOMA_ID = aUDIOMA_ID;
 	}
 
 }
