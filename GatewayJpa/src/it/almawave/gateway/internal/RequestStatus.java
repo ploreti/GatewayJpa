@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class RequestStatus implements Serializable {
 
 	   
-	@Id  @GeneratedValue
+	@Id  @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer ID;
 	private String EXT_ID;
 	private Integer STATUS;
