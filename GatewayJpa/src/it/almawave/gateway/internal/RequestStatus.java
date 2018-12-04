@@ -18,7 +18,6 @@ public class RequestStatus implements Serializable {
 	@Id
 	private Integer ID;
 	private String EXT_ID;
-	private Integer NODE_ID;
 	private Integer STATUS;
 	private Integer SYSTEM_ID;
 	
@@ -43,13 +42,6 @@ public class RequestStatus implements Serializable {
 
 	public void setEXT_ID(String EXT_ID) {
 		this.EXT_ID = EXT_ID;
-	}   
-	public Integer getNODE_ID() {
-		return this.NODE_ID;
-	}
-
-	public void setNODE_ID(Integer NODE_ID) {
-		this.NODE_ID = NODE_ID;
 	}   
 	public Integer getSTATUS() {
 		return this.STATUS;
