@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({
     @NamedQuery(name="RequestStatus.findStatusByExtId",
-                query="SELECT r.STATUS FROM RequestStatus r WHERE r.EXT_ID = :extID"),
+                query="SELECT r.STATUS FROM RequestStatus r WHERE r.EXT_ID = :extID ORDER BY r.INSERT_DATE DESC"),
     
 }) 
 @Table(name="request_status")
