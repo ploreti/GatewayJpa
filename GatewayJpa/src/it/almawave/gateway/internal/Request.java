@@ -9,6 +9,11 @@ import javax.persistence.*;
  *
  */
 @Entity
+@NamedQueries({
+    @NamedQuery(name="Request.findByExtId",
+                query="SELECT r FROM Request r WHERE r.EXT_ID = :extID ")
+    
+}) 
 @Table(name="request")
 
 public class Request implements Serializable {
