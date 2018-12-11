@@ -29,13 +29,13 @@ public class Request implements Serializable {
 	private String  TIPO_VISITA;
 	private String  DTP;
 	private String  SPECIALIZZAZIONE;
+	
+	private Integer CRM_RESPONSE;
 
 	@Lob
 	private byte[] PVT;
 	@Lob
 	private byte[] TXT;
-	@Lob
-	private byte[] CRM_RESPONSE;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	private java.util.Date START_DATE;
@@ -45,14 +45,13 @@ public class Request implements Serializable {
 	public Request() {
 		super();
 	}   
+	
 	public Integer getID() {
 		return this.ID;
 	}
-
 	public void setID(Integer ID) {
 		this.ID = ID;
 	}
-
 	public Integer getNODE_ID() {
 		return NODE_ID;
 	}
@@ -95,12 +94,6 @@ public class Request implements Serializable {
 	public void setTXT(byte[] tXT) {
 		TXT = tXT;
 	}
-	public byte[] getCRM_RESPONSE() {
-		return CRM_RESPONSE;
-	}
-	public void setCRM_RESPONSE(byte[] cRM_RESPONSE) {
-		CRM_RESPONSE = cRM_RESPONSE;
-	}
 	public java.util.Date getSTART_DATE() {
 		return START_DATE;
 	}
@@ -126,4 +119,11 @@ public class Request implements Serializable {
 		AUDIOMA_ID = aUDIOMA_ID;
 	}
 
+	public Integer getCRM_RESPONSE() {
+		return CRM_RESPONSE;
+	}
+
+	public void setCRM_RESPONSE(Integer cRM_RESPONSE) {
+		CRM_RESPONSE = cRM_RESPONSE;
+	}
 }
