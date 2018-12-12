@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Entity implementation class for Entity: Request
+ * Entity implementation class for Entity: Staus
  *
  */
 @Entity
@@ -43,6 +43,11 @@ public class Status implements Serializable{
 
 	public void setDESCRIZIONE(String dESCRIZIONE) {
 		DESCRIZIONE = dESCRIZIONE;
+	}
+
+	@Override
+	public String toString() {
+		return "Status [STATUS=" + STATUS + ", DESCRIZIONE=" + DESCRIZIONE + "]";
 	}
 	
 	

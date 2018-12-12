@@ -74,5 +74,12 @@ public class RequestStatus implements Serializable {
 	public void setINSERT_DATE(java.util.Date INSERT_DATE) {
 		this.INSERT_DATE = INSERT_DATE;
 	}
+	@Override
+	public String toString() {
+		return "RequestStatus [ID=" + ID + ", EXT_ID=" + EXT_ID + ", STATUS=" + STATUS + ", SYSTEM_ID=" + SYSTEM_ID
+				+ ", INSERT_DATE=" + INSERT_DATE + "]";
+	}
+	
+	
    
 }

@@ -1,18 +1,17 @@
 package it.almawave.gateway.internal;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
- * Entity implementation class for Entity: Request
+ * Entity implementation class for Entity: Response
  *
  */
 @Entity
@@ -131,6 +130,13 @@ public class Response implements Serializable  {
 
 	public void setTESTO(byte[] tESTO) {
 		TESTO = tESTO;
+	}
+
+	@Override
+	public String toString() {
+		return "Response [ID=" + ID + ", EXT_ID=" + EXT_ID + ", TUPLA1=" + TUPLA1 + ", TUPLA2=" + TUPLA2 + ", TUPLA3="
+				+ TUPLA3 + ", RANK_TUPLA1=" + RANK_TUPLA1 + ", RANK_TUPLA2=" + RANK_TUPLA2 + ", RANK_TUPLA3="
+				+ RANK_TUPLA3 + ", URGENTE=" + URGENTE + ", KM=" + KM + ", TESTO=" + Arrays.toString(TESTO) + "]";
 	}
 
 	

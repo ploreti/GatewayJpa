@@ -2,6 +2,8 @@ package it.almawave.gateway.internal;
 
 import java.io.Serializable;
 import java.lang.Integer;
+import java.util.Arrays;
+
 import javax.persistence.*;
 
 /**
@@ -126,4 +128,14 @@ public class Request implements Serializable {
 	public void setCRM_RESPONSE(Integer cRM_RESPONSE) {
 		CRM_RESPONSE = cRM_RESPONSE;
 	}
+
+	@Override
+	public String toString() {
+		return "Request [ID=" + ID + ", EXT_ID=" + EXT_ID + ", AUDIOMA_ID=" + AUDIOMA_ID + ", NODE_ID=" + NODE_ID
+				+ ", FILE_URI=" + FILE_URI + ", TIPO_VISITA=" + TIPO_VISITA + ", DTP=" + DTP + ", SPECIALIZZAZIONE="
+				+ SPECIALIZZAZIONE + ", CRM_RESPONSE=" + CRM_RESPONSE + ", PVT=" + Arrays.toString(PVT) + ", TXT="
+				+ Arrays.toString(TXT) + ", START_DATE=" + START_DATE + ", END_DATE=" + END_DATE + "]";
+	}
+	
+	
 }
