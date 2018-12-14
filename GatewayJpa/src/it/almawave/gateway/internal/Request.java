@@ -26,11 +26,11 @@ public class Request implements Serializable {
 
 	private String EXT_ID;
 	private Long AUDIOMA_ID;
-	private Integer NODE_ID;
-	private String  FILE_URI;
-	private String  TIPO_VISITA;
-	private String  DTP;
-	private String  SPECIALIZZAZIONE;
+	private String NODE_ID;
+	private String FILE_URI;
+	private String TIPO_VISITA;
+	private String DTP;
+	private String SPECIALIZZAZIONE;
 	
 	private Integer CRM_RESPONSE;
 
@@ -54,12 +54,15 @@ public class Request implements Serializable {
 	public void setID(Integer ID) {
 		this.ID = ID;
 	}
-	public Integer getNODE_ID() {
+
+	public String getNODE_ID() {
 		return NODE_ID;
 	}
-	public void setNODE_ID(Integer nODE_ID) {
+
+	public void setNODE_ID(String nODE_ID) {
 		NODE_ID = nODE_ID;
 	}
+
 	public String getFILE_URI() {
 		return FILE_URI;
 	}

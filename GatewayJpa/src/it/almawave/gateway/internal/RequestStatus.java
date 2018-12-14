@@ -26,7 +26,6 @@ public class RequestStatus implements Serializable {
 	@ManyToOne
 	@JoinColumn(name="STATUS")
 	private Status STATUS;
-	private Integer SYSTEM_ID;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private java.util.Date INSERT_DATE;
@@ -50,10 +49,7 @@ public class RequestStatus implements Serializable {
 	public void setEXT_ID(String EXT_ID) {
 		this.EXT_ID = EXT_ID;
 	}   
- 
-	public Integer getSYSTEM_ID() {
-		return this.SYSTEM_ID;
-	}
+
 
 	public Status getSTATUS() {
 		return STATUS;
@@ -61,10 +57,6 @@ public class RequestStatus implements Serializable {
 	
 	public void setSTATUS(Status sTATUS) {
 		STATUS = sTATUS;
-	}
-	
-	public void setSYSTEM_ID(Integer SYSTEM_ID) {
-		this.SYSTEM_ID = SYSTEM_ID;
 	}
 	
 	public java.util.Date getINSERT_DATE() {
@@ -76,7 +68,7 @@ public class RequestStatus implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "RequestStatus [ID=" + ID + ", EXT_ID=" + EXT_ID + ", STATUS=" + STATUS + ", SYSTEM_ID=" + SYSTEM_ID
+		return "RequestStatus [ID=" + ID + ", EXT_ID=" + EXT_ID + ", STATUS=" + STATUS 
 				+ ", INSERT_DATE=" + INSERT_DATE + "]";
 	}
 	
